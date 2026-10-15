@@ -1,0 +1,9 @@
+services:
+  diagnostic:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: diagnostic-tool:latest
+    container_name: diagnostic-app
+    stdin_open: true
+    tty: true
